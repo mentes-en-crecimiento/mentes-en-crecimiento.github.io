@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<style>
+		body{background-image:url(fondo.jpg);
+			background-repeat:no-repeat;
+			background-attachment:fixed;
+			background-size:cover;
+			margin:0;
+			}
+		h1{ font-size:5em;
+			text-align:center;
+			color:white;
+			margin:5px 400px;
+			text-transform:Uppercase;
+			text-shadow: 4px 4px #3D8748;
+			}
+		h2{text-align:center
+			}
+		.contenedor{position:fixed;
+			top:0px;
+			width:100%;
+			margin:0;
+			padding:0;
+			text-align:center;
+			background-color:#333;
+			display:flex;
+			flex-direction:row;
+			justify-content:space-around;
+			align-items:center;
+			font-size:20px;
+			}
+		.teximg1{
+			width:80%;
+			height:23em;
+			text-align:justify;
+			border-radius:15px;
+			tex-shadow: 4px 4px #3D8748;
+			background-image:url(https://img.freepik.com/fotos-premium/fondo-blanco-simple-lineas-suaves-colores-claros_476363-2803.jpg);
+			background-size: cover;
+			border:none;
+			padding:50px;
+			margin:90px;
+			gap:2em;
+			display:flex;
+			flex-direction:row;
+			justify-content:flex-start;
+			justify-content:space-around;
+			align-items:center;
+			font-size:21px;
+			}
+		.link{
+			width:150px;
+			height:26px;
+			background-color:#333;
+			box-shadow:inset 0 0 0 0 #333;
+			color:white;
+			text-decoration:none;
+			transition:ease-out .4s;
+			front-size:1.9rem;
+			outline:none;
+			padding:8px;
+			displai:flex;
+			flex-direction:row;
+			}
+		.link:hover{
+			box-shadow:inset 200px 0 0 0 #60F476;
+			color:#333
+			}
+		.link2{
+			width:150px;
+			height:26px;
+			border-radius:12px;
+			background-color:#60F476;
+			box-shadow:inset 0 0 0 0 #60F476;
+			color:black;
+			text-decoration:none;
+			transition:ease-out .5s;
+			front-size:1.9rem;
+			outline:none;
+			padding:8px;
+			displai:flex;
+			flex-direction:row;
+			}
+		.link2:hover{
+			box-shadow:inset 350px 0 0 0 #333;
+			color:white
+			}
+			}
+		.texto{
+			width:27em;
+			high:20em;
+			borg
+			}
+		.botn img{
+			cursor:pointer;
+			transition:transform 0.5s;
+			}
+		.botn img:hover{
+			transform:scale(1.5);
+			}
+	</style>
+		<link rel="icon" type="image/x-icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYNFA8WEg8PDw8PDw8PDxAQDxEREg8PGiEnGRgUJCQpIS4zKSwrHxYWJjgnLC8xNTU1GiQ7QDszPy40NTEBDAwMDw8PGQ8QET8dGB0/Pz8/PzQ0NDE0MT80PzE0NDE0MTQ0MTExPzExMTE0MTExMTExMTQxMTExMTExMTExMf/AABEIAN0A5AMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYDBAcCAQj/xABEEAACAQEEBQcJBgYBBAMAAAABAgADBBESIQUGIjFBEzJRUmFxgUJicpGhsbLB0QcUIzR0gjNTc5Lh8EMkg6KzFWNk/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAECAwT/xAAiEQEBAAIBBAIDAQAAAAAAAAAAAQIRAxIhMTIEcUFRYSL/2gAMAwEAAhEDEQA/AOzREQEREBERAREQEREBERAREQEREBERAREQEREBETBWrKgvYge890DNIm36SwZIMZ4t5K/X3TBarW1XIbCdHW7/AKTR43XwrxSt1RWxByxbffmG8JLWTTCtk45M9O9P8SJrhVVmYqirtM7NhC98qWldYC2JaBwj+ZzS3cOHfv7oHWkYMLxunyQOo9blLFQvIJQ1UJ7mN3sIiEWGIiAiIgIiICIiAiIgIiICIiAiIgIiYatVUBLMFHSf9zgZomnZ7elXJXz4A5E91++bkBEx1KioL2IUdJkTa9IM2SbK9PFvpA27VbgmS7Texe+RdWqWN7HFMWIT4xF155vsUdMK81GLbpC6V0qliG2cVRuZTXnt29g7TNPTGsoW9LPtN5VXgvojj3nLvlOtZao15LO7E3s20W7SZBvWzS9S2884UVtimvMX6ntPsmsJ4o08MsOr+rNXSBDfwrN5VUjn9ijj37vdKJ/UfSq0LO6uc/vDsO4qvzviWWwavWegiotnRgvlVdp2PEk3e7KIRNxEQEREBERAREQEREBERARExVaqoL2YKO2BkmGtWWmL3ZVHaf8Ab5EWzTJ3Ul/e3yH1kJWqNWN7lnPb5P0hdJm1adG6mP3N8h9fVIutXZje7sx7flMBpGY2bDvgZGq9EldHaRqjI/iJ5+/wPHxkHyk9/wDygo5Mcfm8f974ElbKrub3OLoA5i9wmFKhWY6GkEtHNOfUbI/5mta7S3NpBcXlVH/hr3Dex9Q7eEis9t0ilnXFUOHqpznfuEp+ldMvasuZS4U1bndpPH3TDpKy1kZmq4nxf8nOH+O7KaUqE9UaTVGCIjO7m5ERSSx7AJJ6D0BWt7XIMNNW26r/AMNOwdJ7B43TpehNAUrAuwuOow26r89uwdA7B7YFf1e1IVLnteF23rQGaL6R4nsGXfLwiBQAAAALgBuA6JkiEIiICIiAiJ4ZgovNwAGZ6IHuJoWHSdG14uQtFK0YGwvyVRHwHoNxymS12xKAvqVAgO4E5nuAzMDamGtXWmL2YKPae4SuWnWE1MqQwdr8/wABuHtkebeb73OJutzjC6TtfShOVMYR1jmfVuEzWfSy7nGHzhu8RwkElZX5pxe+eoFuRw4vVgQdxBvnyrVVBexCjpMrFCq1M3o7L7vEcZjr1Gc3s7Oe35dEGktatL8KY/c3yH1kRWqMxvcsx875TA9Y7hNWvXCDExb3mQbb38JH2q3JZ+e+FurvdvCR9t0k7i6meT87y28eHhK7WDKWxb+LX4i3jAnausTPkByY63OP+PCYPv8AyeYfFi8nnYpC3zesei3rZ3YE6z/IbzAyWnS71Mh+Gvm728fpMdmV/DzvlJMaICZrtnzt/hwmWjYXbnbC+dv9UD3Y2TZ6/ndPZJJQZhp0Voi/ZXDznb68JG2zT6plSHKN1myRfmf9zhUy5ChicKrxZt13bIvR9mststVCmEZg7vjwNgRsKlu/evC7vlftVse0G93ZuqvNRe4SV1K/PWX0qv8A62lR1mjSWmoVECIouVVAAUdAAmeIhCIiAiIgIiIHyc/180W+kCUFqqU0ULdS/wCFzv2gLiT2km7onQJUdP1gtdwctlM/CFjj1psNp0W6v+JZ3U7Fek5u7gw4Hqnf0SSs2t7332rFU61Xy/Ebj4Xd06CQrhgcLBtllbMMOgicV1mpqlqtaKFVEquqIu5B0AcBJodhstBGVHvx4lDjgLiLxlMlWzq27ZaRVht2KlSA2Pwqa+lkOM92nSqWUX1qiqPJVs6jdwGZ90KlrPQVc78R/t9k20Bkfo63UrQuKjUWp09K943jxm7y+HzoGa6YmdZ6Vw0xsg4SoyFVYTVrUMOLDteblfNhR0T6wPCFVW3Uy5YAci3V+vR4TUoaFqOcxgTrt5XcN5ltaniKkjEy83EvNme43SIhLHopKOYGN+s+fqHCSaUC2/ZnvGExE4VXizbOHxO6RVv1kRMqQ5Rus2VNfmf9zlEo9JUF96qq72bZ9vCQ9s00i5Uxyh63NT6mQVrtz2g31HZuqvNRe4TDigerVa3rHbdm6q81F7hNRVmYCeQIH3DJrUv89Ze+p8DSFvk9qb+ds3pVPgaB1yIiEIiICIiAiJB6b0qbOyINnGpOPfhzu3QJKvaloi92Vezie4bzKdpqpy9QuithYAZ78hdumapVFTaL48XHFeZgMKj1cru2ZyTWdsVrtZP8952lqIfh+6RVm1SsyValaon3irUqF15S406d+65dx7zf4QKzorTNN0pq34ZVEXE3Ma4AZHh4yY0xqiloJek7UarZnFe6Oe0HMeGXZJLTWr1ntmIsnJ1W/wCSlcp8RuPjn3Tbp2ng393+JnGX8uvJ0WS49v25ja9H2jRrqzB6JVtirTY4G7Aw9x9UndC65O7U6VVEqO5uSomwb7r9oDI7uF3dLXpwhrLa/KH3W0/AZyHVz81Zv6nyMrk6xyxc72xeSv0m9Z6rLztr3+uQ6uJ6FtZchtd++FWHl1UXkqvv9XGadbSPBB+5vpIOta1XNn2ujj4CaFbSrNkmwvW5z/4gTtW28mcTVMJ/uLeE0bZrDUYYUwp5/lt8hIVGLYiTiPWaersUqFWuz5M7st9+0xbM8e+Yp6cZzzAzKMpjbfMq7piIzgZQs+GewJ8MDAsn9Tfztm9Kp8DSCVZPanfnrN6VT4GgdbiIhCIiAiIgJUNcjt0v6Z98t8p2udNi1JgGuVDe3Bc+MCu4ypvBwzdoWrENr+5Zn0bY0rU9obWM3MuRXITVtFn5Fit+LD5W7fCt6ne2YOzPbgyMRyu44ZkW353N/cvzEDcWnimpVsrLmNpfb6psq/EGea1UKL2KqF8pjhECG0wxWz2v9NaPgM5Tomo1OtSZRiZDfxYXXEZ3cM503S+lUrJURExrUR0Z2yyYEG4bzkeMrTWdaKOERUF3k727zvMzl4rfHJc5L+0pZtNo42w1M9XeG7iPnNW16YZ8qYwDrNm/0Ehae+ZjMceVym67/K45x5ax8WM9B82JPk5s31mTluiaizIs6PK26DFsV/ZM3KBRNez+V4TLgLHKUZEOLMwwzmSmmEXT6RALun0CAJ8ger5ixT2zBZjugZCZNanfnrN6VT4GkVo7R9W1PhpUnqHyrty9pJyHjL9q3qibI6VqtUtVS/BTp8xLwVN5OZyJ3XeMC5REQhERAREQPkiNL85fR+cl5RNfarU61mZGZGFKptK2E7xJbqLJuqvrVrg+h7YtNaVOpZns9Oo9PmOrMzBmBHYoyI9U3rNpylpICpSxKrjmVFCupGRG+45jhKxrLoOtpZ0qh1WolIU9tcCOFJYG8bjtHhd3T5oaxPZqKJVRkdWqbOTDNiQQRkd8lymuzUxu+633zLV0c+FXUY1ZQdnet+e7j4SCoW5kyO2PO3+uWbQesNmtX4SVl5ensPSfYe9ciQDzh2i+McpUyxsaCMV3bMrFptL1mvd2bq9C9w3CWWu23U/qP7zKkTn4zSMoWY7UNh+4zYmC2DYf0DM5etdOL3x+0NS3zM0wUt82Chuv8mc+Lw9PzvafQk9gzGIWdXibtj2sXh85vJNKwjneHzm8ko+z5dBM+FoH1mCzxin2lRao2FBiLf7vO6Ttk0EFzqnE3UTIeJ3n2QK6BPTSZ09TWmKQUKq7eFVy6JEocUDo32aj/pq36p/gSXCVH7Ovy9X9U/wJLdCEREBERAREQIy2aUp0LwSXfqLtHx4CVDS9c2t0Z6ajACFAvbCCb8+k9t0yWkBcZ6uNvVeZyq1a01LdcuNqStddSp3jFfuF+9j2eyYsuTpOnGf1f6tqVPObzfrNKtWapkeb1Zo6B0daWCmsVSnh2VqZ1ezu/dnJ8UFoi/ZXpZvrwnOzvp0l3NowaOZheNnzW/3Kcz1hslSz2iqXpvTxVHdHK3Bs7wQRkfCdPt2lhTBwDGes27/Mr9qqtaLxV/EHUPM8BumpenuzlJl2dCs2jUrUaDbSVGoUmZudiJUXkjp7ZQcGE+MtmidYeTSmlVNhEQB03qAABeOMrBXP906Syudlj1Ne28yp6BmzMFsGw/oGTL1rfF74/aHsShmW/t90kLXzfESOoNhYEc7P3TMzFt+1OXD4en50/wBz6ZLNTDnPyRM1pTCEAHTzZhsz4C3dNuzuWLXzs8T7Y6RUG/yrptATEtQbU9K+KUZAhY5DFPVpo8mjMd+WHozI39M2rFzf3GeNK/w27094k2umDV9y1Vr/AOU/vEtVFzKboRvxG/pn3iWWlasG8YvfGxrazHKl/wBz5SAxGTOsVdWFIg/zO/hwlcq1zwhHVvs0/K1f1T/AkuEpH2V/la/62p8CS7yoREQEREBERAodoXEKgHlY19d843Z9A17Ba7EK1JlX75Zgrrt022xuI9xuMvVl1zTHUS0Jgw1HVatO9kuBIF43jvF/cJZqFdLQoZHSojc1lYOMvnM+G+1eLa2BKjDnKhYdHjKpXtDVDexZvN4L3CWrSX8Kr/TMplfmnw98k15Xd8PFpcXXX7U8WamGLA9X5iaFrtqWcXu+HsGbt4TY1QtY0jXqpc1NEs5dG3vfiUZ8Lszl7Y71e0b6Wgbjs4dn1TVe2KpuXaz8P8zJabOyM45yq5XEvYeiQ/KBSvpTE3FslT8wW7mVPQM1Bamdk8lcY2V7+Jm1b6iqjglb2XJeLeE3lZ004sb1yf1CUmzmcTBTXOb1mUYpz4fD0fN959PABUX3T6tQ7Ul7JoavbyFoUmfa233U072OXhv7JeNA/Z5SoEPan+8v1FvWkp97eNw7J2eJRdA6Jr20sKNJnW8Kz7kXvY5eG/sl5s+paWWjVeu/K1VpOwVL0pqQMu0+Nw7JdqNJaahUVUVRcqqoVVHQAN0xaU/g1/6T+4yo5nXQKt4C7PN8mRWlHxU29JPeJYLRZw6sBs4vVIHStmZEN48obS7Q3iRtH6H2Xb0D7xJzFikVoSjic3/yz7xJd0wbzzoREaa/4/3/ACkO8mNO/wDH+/5SHcwOq/ZX+VrfrKnwJLvKN9lR/wCjr/rKnwJLzKyREQEREBERA4hrP9n9qs71KlEfe6TO7/hjDWQEk3FOO+69Sb+gSpWO21LK5alUem6m58PSOBByPcRP05K7rDqpZdJAmrSC1cOzXp3LUHRedxHYwIgctpa6B6VRLRTwvyZw1KeYY3cQTl4E+Eqtv0+9TEtMcmnW3u3yHh65bNYPs4tVnv8Au4FtptsjBclVb916k3Xbswe0gST1b+yQnC+kKnb92oN7Gf5L/dGou65fZdG19INgs9KpaarML1RSxXzidwHaSBOl6s6kVNCL94tVVOUrqLPyCDEEB27y24nYuuAu7TOqaM0ZRsaBKFBKCDyUAGI9JO8ntOcitdv4FP8Arj4Wikc8tdJldyRss5ZW4Zm8ZyoU6DOcg11/O4Zb85fVqlN3NbnK20G8JHactC3UAqKmFXXCtwRd266Z0u33VzQyVAz1MTsj4VXFhTIA3nid/dJnSGhaNoG1TVXVcKulyOo4ZjeOw3iR2rbnBUP/ANnyEn6b4hnHTLNLjlcbuXVc/t+iWs9QoDjVfK5pzF+czWeyhcycR9kktOn8Z/RT3CRxcxjjMe0a5OTLksuXmR2jV5Qtlsd2Q+60T61BMlJG6vflLF+ks3wCSU05ExVEDhlYXqwII6QZliBWrdq+MzSOHzG3eB+vrlT1hs70qbq6MhxJkfKzG7p8J1CY2QNdeASDeL+B6RC7cp0XoKtTXlatNqKMuBMeTsTnfh3gXKd93CerehUL6U6LpuxtaKeFLsQYNnliuBF3tlRtNnamcLoyHqt5XdwIkWKVpXyf+58pGtTLHKWLWCzovJkDDix93DhNGxWGpaHwUqb1H6EXm9pO4DtMFdA+y5MFkqj/APW/wJLrK5qdol7BQZKpTE9U1MKm8ICqrcTxOz7ZY5WSIiAiIgIiICIiAiIgJWNef4FP9QPhaWeV7XEfg0/64+FoFABkXprfT/f8pMWhQl3nSG02cXJ3ef8AKRps6AqFUe7+Z8hJ6z2pdx2T7PXK5oQ4Uf0/kJJEybGhp5hyz+inuEh6loO4f3TZ0p/EPoj3CR7DOUd41Y/J2D9HZvgElZFasfkrD+isvwCSsrJERAREQEwV6C1Bc6K69DC+Z4gVi2an0bQ6Mz1OTTF+GpuvJuyv33Zd/bJux2JLOoSkiU1G5UW7xPSe0zciAiIgIiICIiAiIgIiICIiAkFrWoNJL/5o9xk7NHSFiFoXCxIAOIEcDcR474HObbZWYDDtYfJ4yuaVQqUBDYs9n1ToNt0RUo3kKaidZN6943j2ypaxb6Xov8pG2voWgWR+tj+Qm7hK5GZNGaPqUUvqU3p42xori4stwF9xzG475htmy/gIRA6W/iP6NP3CaDGb+kTidvRHuE0eTLHKB3fVj8lYf0Vl+ASVkVqyuGx2EdFjsw/8BJWVkiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICaL6OpFxU5Knyq33PgGJb95B4Htm9ECs6xWR2ZHVCyqmFmG1hzJ3b7s98rdakr84Yvf650mRdt0TTtBN64HAydcvX0wsrkGlbOEquOdzOd3CeLHZHtD4KNN6j9CLfh7SdwHacpeqGqNO0165q1XZKTonJoMGMgDebyQOwXHtlvsdjp2ZVSlTSmp4KLvE9J7TA86Hs7UbPZkcXPTs9FGF+K5lUAi/jmJIREIREQEREBERAREQEREBERAREQERED/2Q==">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Leishmaniasis</title>
+</head>
+<body>
+	<nav class="contenedor">
+		<img style="border-radius:100%" src="img leishmaniasis GvSig\Logo del grupo.jpeg" width="60" height="60">
+		<a href="#es" class="link">¿Qué es?</a>
+		<a href="#patógeno" class="link">Agente patógeno</a>
+		<a href="#ciclo" class="link">Ciclo biológico</a>
+		<a href="#tratamiento" class="link">Tratamiento</a>
+		<a href="#prevención" class="link">Prevención</a>
+		<a href="#proyec" class="link">Nuestro Proyecto</a>
+		<a href="pagina de Leichmaniasis GvSig Mapas.html" class="link">Territorialización</a>
+	</nav>
+	<div style="margin-top:5em">
+		<h1 style="font-size:px;"><em>Leishmaniasis</em></h1>
+		<h1 style="font-size:px;"><em>en perros</em></h1>
+		<h1 style="font-size:px;"><em>y humanos</em></h1>
+		
+		<div id="es" class="teximg1">
+			<div>
+				<h2>¿Qué es?</h2>	
+				<p class="texto">La leishmaniasis es una enfermedad parasitaria diseminada por la picadura
+				de un mosquito hembra infectado, dado que son estas las que se alimentan de
+				la sangre para luego poner sus huevos;los mosquitos machos se alimentan del 
+				néctar de las flores y los jugos de las frutas. Hay tres formas principales de 
+				leishmaniasis: la viseral(la más grave, porque a falta de tratamiento casi siempre
+				resulta fatal. Se caracteriza por episodios irregulares de fiebre, pérdida de peso,
+				hepatoesplenomegalia y anemia), la cutánea (la más frecuente, que provoca lesiones
+				cutáneas, sobre todo ulcerosas, en las zonas expuestas del cuerpo, que pueden dejar
+				cicatrices de por vida y causar discapacidad grave o la estigmatización de la persona),
+				y la mucocutánea (que afecta boca, naríz y garganta, provocando la destrucción 
+				parcial o completa de sus membranas mucosas).</p>
+			</div>
+			<img src="https://www.intramed.net/UserFiles/imagenes/leismanhiasis.jpg" width="400s" high="150">
+		</div>
+		
+		<div id="patógeno" class="teximg1">
+			<img style="height:10em;" src="https://infoamazonia.org/wp-content/uploads/2018/10/800px-Phlebotomus_pappatasi_bloodmeal_begin.jpg"width=250px">
+			<div>
+				<h2><em>Su agente patógeno</em></h2>
+				<p class="texto">El patógeno de la leishmaniasis es un protozoo parásito del género leishmania que se transmite por la picadura de flebótomos hembra infectados, de la subfamilia Phlebotominae. Los flebótomos son unos mosquitos hembra de reducido tamaño, de color amarillo pajizo, cubiertos de abundantes pelos. De vuelo corto y silencioso, son difíciles de ver. Los individuos infectados con el parásito del género leishmania transmiten a través de su picadura, la leishmaniasis. El principal vector de infección son los mosquitos de los géneros Phlebotomus y Lutzomyia.
+				La leishmania tiene una clasificación interior, dado que hay diferentes especies de flebótomos los cuales afectan de diferentes formas al organismo, una de éstas es conocida como "Leishmania infantum", y es la única especie productora de leishmaniasis canina y humana. Aunque su prevalencia en perros es muy alta y una gran parte de la población humana está por lo tanto expuesta al vector que la transmite. La enfermedad que produce es relativamente rara en el hombre.</p>
+			</div>
+		</div>
+		
+		<div id="ciclo" style="height:25em;" class="teximg1">
+			<div>
+				<h2><em>Ciclo biológico</em></h2>
+				<img src="https://media.elentrerios.com/fotos-v2/2020/01/21/l_1579606842.jpg"width=700px">
+			</div>
+			<div>
+				<h2 id="ciclo"><em>Más información</em></h2>
+				<a target="_blank" class="botn" href="https://fundacionio.com/salud-io/enfermedades/parasitos/leishmaniosis/#:~:text=Ciclo%20biol%C3%B3gico&text=El%20insecto%20inyecta%20en%20la,de%20la%20especie%20de%20Leishmania."><img src="https://png.pngtree.com/png-clipart/20220904/ourmid/pngtree-right-arrow-ui-button-3d-icon-render-png-image_6137266.png" width="100"></a>
+			</div>
+		</div>
+		
+		<div style="height:32em;" class="teximg1">
+			<table border=1>
+				<tr>
+					<td>
+						<h2><em>Síntomas</em></h2>
+						<p>Existe una amplia variedad de síntomas asociados a la leishmaniasis, por lo que sus manifestaciones clínicas pueden variar considerablemente al depender de la respuesta inmunológica del paciente.</p>
+					</td>
+				</tr>
+				<tr style="display:flex; font-size:18px;">
+					<td>	
+						<strong>En cualquier caso, los signos más comunes de leishmaniasis en perros son:</strong>
+						<ul>
+							<li>Pérdida de pelo especialmente alrededor de la cabeza y ojos, orejas y nariz</li>
+							<li>Heridas en la piel que no cicatrizan</li>
+							<li>Crecimiento excesivo de las uñas, que se vuelven largas, curvadas y frágiles</li>
+							<li>Insuficiencia renal (en fases avanzadas y graves)</li>
+							<li>Aumento del tamaño de los ganglios linfáticos</li>
+							<li>Incremento del consumo de agua</li>
+							<li>Bultos en la piel</li>
+							<li>Inflamación de párpados</li>
+							<li>Pérdida de apetito</li>
+							<li>Fiebre</li>
+							<li>Apatía y letargia</li>
+							<li>Diarrea</li>
+							<li>Vómitos</li>
+							<li>Pérdida de peso no ligada a una reducción en el consumo de alimentos</li>
+						</ul>
+					</td>
+					<td>
+						<strong>En las personas:</strong>
+						<ul>
+							<li>La leishmaniasis visceral afecta al bazo, hígado, médula ósea y otros órganos.</li>
+							<li>Los síntomas que produce son:</li> 
+							<li>fiebre prolongada</li>
+							<li>Aumento de tamaño del abdomen</li>
+							<li>Pérdida de apetito</li>
+							<li>Disminución de peso</li>
+							<li>Tos seca</li>
+							<li>Diarrea y vómitos</li>
+						</ul>
+					</td
+				</tr>
+			</table>
+		</div>
+		
+		<div id="tratamiento" style="height:12em" class="teximg1">
+			<div>
+				<h2>Tratamiento</h2>
+				<p class="texto">El tratamiento contra la leishmaniasis consiste en medicinas que contienen antimonio, un tipo de metal o potentes antibióticos.</p>
+			</div>
+			<img src="data:image/jpeg;base64,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" width=300px">
+		</div>
+		
+		<div id="prevención" style="height:19em" class="teximg1">
+			<div>
+				<h2><em>Prevención</em></h2>
+				<p class="texto">La mejor forma de prevenir esta enfermedad es protegerse de las picaduras de los flebótomos infectados. Para esto evite estar al aire libre desde el anochecer hasta el amanecer, use pantalones largos y camisas de manga larga cuando esté afuera, use repelente de insectos y mosquiteros cuando sea necesario, y también es primordial mantener el patio libre de basura, hojas secas y materia orgánica.
+				En perros la mejor forma de prevenirla es utilizando collares que repelen al flebótomo o repelentes contra éste, de esta forma el flebótomo no se sentirá atraido hacia el perro evitando la picadura de éste en el perro(sin picadura no hay enfermedad).
+			</div>
+			<img style="height:10em;" src="data:image/jpeg;base64,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"width=270px">
+		</div>
+		<h1 style="font-size:4em;" id="proyec"><em>CONCURSO 2023<br>Proyecto gvSIG Batoví</em></h1>
+		<center><img src="img leishmaniasis GvSig\logo gvSIG.PNG"></center>
+		<div style="height:5em" class="teximg1">
+			<div>
+				<h2>Título</h2>
+				<p style="display:flex;font-size:25px" class="texto">Estudio de la leshmaniasis en el contexto del liceo N°2 de Salto: amenazas, debilidades, fortalezas y oportunidades en la actualidad.</p>
+			</div>
+		</div>
+		<div style="height:23em; display:flex;font-size:25px;" class="teximg1">
+			<div>
+				<p class="texto">"Mentes en crecimiento" es el nombre de nuestro grupo para la participación en un proyecto llamado gvSIG Batoví.<br>Nuestro objetivo general es analizar las amenazas y dificultades ambientales que posibilitan la proliferación del vector de la leishmaniasis, así como las oportunidades y fortalezas comunitarias para enfrentarlas.</p> 
+				<img src="img leishmaniasis GvSig\Equipo.jpeg" width="450px">
+			</div>
+			<div>
+				<p style="width:10em;">Galería de imágenes:</p>
+				<a class="botn" href="Pagina leishmaniasis GvSig imagenes.html"><img style="border-radius:10px;" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoGBxQUExYTExQYFhYYGhkdGhoaGRkYHBobGh8cGRoaGRgfICsiIRwoHRkaIzQjKCwuMTEyGSI7PDcwOyswMS4BCwsLDg4OEA4ODy4bFhsuMDAuOy4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLi4uLv/AABEIAMcA/gMBIgACEQEDEQH/xAAcAAACAwEBAQEAAAAAAAAAAAAABQMEBgcCAQj/xABOEAACAQMABgYFCAQMBQQDAAABAgMABBEFEiExQVEGEyJhcYEHMkKRoTNSYnKSorHBFCNzghYkNENTdLKzwtHw8RVjk6PhJTVEgwhkw//EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A7NUVxMqIzscKoLE8gBkn3Cpao6WuokjxKwAkygB3sWB7KgbScZOzgCeFBh9HLeaVQXEtw9paOSYoYexK6A9lpJtpGcHsrswaty+jLRrfKQPIebzzsf7ysx0F6R3Gj7OFbuCSW0dFeOeEa/VK/aKSrvABJ2+7PDUR+krRrLrLcp+9rIfcwB+FBFJ0QhgIFpNcW2NuIpnK5745CyHwxVqx6Xyw3MVpeLlZsLDdDAEj4+TlQABHJ3FdhyMAbcJbn0g2zsRbiS5kPsQxufexAAHfS68hvJXgurxEiihngaK2VtZmcyogaSTdkaxwBz2jmHYKKycnTGZCdbR8rp86GSKT7jMjZ8q+wekexyFmeS2YjOrcRSRfeYaufOg1dFYQdN7q7JGi7XXj24ubktFET9BANdx37N26vp6N382TdaUlXPsWqpAq9wcgufE7aDdUVzibojLE/wCq0nfhhxecSA/WRlwTViDSelbf1jFfxjfkfo83kRmNtnPGaDf0VnehXS2O+jY6himjOrLC/rxtw4DKnGw4G41L0o6VwWQXrdd5JNkcUS68j436qchzOBQPaKRdFulEV6JAiSRSRMFkjlUK66wyp2EgggHBB4U9oCiiigKKKKAooooCiiigKKKKAooooCiiigKKKKBL0v6QpZW7TMNZyQkSZwZJW9RB4neeABNJ9G2kmBLcN1lwy9tvZTWwTFEPZjBwObaoLEmsv6Vuuub0JD2v0BI5hH8+WRw2qf8A602ccnvrT6B03DdxCaFsg+svtI3FHXgw/wBtlAo0fBeaOHV26C7tASViLBJogxyVjc9mRASThsHhXnSHS+IBmfRFyGAJLvBFhQBtJfW4CtRWQ9Jt3GBaxTuyW0kw68rnJjQa2qcbdUnGcbdlBV6NdKZdIzPHZ9VbRRoCWlTXdmJxhUV1AA28TVzTuirnsGe5t3WJxIqFGt1kkXOrryF37KnBGzad+4VVtNCWk0Ujz2kV1maUxGCWJWEWtiJNZZE7IQDALZA4UlvIdGWhJOi2B/5sseqe4B5mB8hQPdAdNoZVDsGgyxTL4aJnG9VlXsnfszjPDNevSfMipZvMpe3FwhljGSWQKzk4G8KqsSNxpX0a0xcXEEkVvYqFlkc68oAt0jYAKAuqDJhVC4CjcDU+hHKHQ8RfWC3N2msdgOoZI1wCTgYOAudmwUHQdA6VtZoUa1kjaIKAoQgaigYC6mwrgbNUgYqe5vRghTk8+VItK+jmwmcyLE0Ev9JA7RkHnqjs5278VSl6C3EanqdLXC4/pUjm3eOKB0TVPS+l4LZOsnlWNeGTtbjhV3se4UlXo1eNsl0pMw/5UUUJ94zVDS2ibexCyrG93eyHUh65zKxbfnbhVVd5OBjmM0FLQXSuZLu5uRbN191HGtpE2zMYL5llPBRqAnnrADZtE17MbVy7t+laSuNmsdyjko9iJfLOPd6tbW6tkkm/RZJriXtSzu8Y8tQEkRryUHYPADx0ctEOtN1yTzS/KSKwI+ouPVQcvfQX+h99e2cUpdoHLyPJI7iQbMBQesDYVQqjC6uzbT2Dp3d62q2j9bsB8pKRsJIAxJGgDbM6utkDfWS6X6SeCWPWA6pUBiLA9U05fGtKw4Rp21U7zuOQMVLTpQ1uY4TNHcxsMJ1K5lXVBwvVhm1lOMZznO+g6Jbeka3yVnhuLfG9pItZBjfl4y4AHM4ApXpHpbc3jldHt1FupwbpkDtIRvEMbbNT6bb+G6slosTX8kiyp1NrG2HUnLyOu0xswOAo2awHLGd+NMitcN1MJ1IU7LyKAMY/m4uGt37l8dgCx0W0xdRXJSa4e6ttRtZ2jXXjkBXAHVjLBgTsxsx79O3TGwDajXcSN82RxGfc+DVK0tUiQRxqFVdwH5neT3naa9yxKwwyhhyYAj3Gge2l9HKMxSJIOaMrD3g1ZrCXXRKyk2taxZ5qgRvHWXBz35qI9FEX5G4vIOXV3MhA/dkLCg6BRWCFlpFCOq0m5A9maCKTPiyhG+NS/wDFNLof/gzDwmib8XFBuKKxI6XaQUgSaLDji0V1G33HVT8akPpAZfX0Zfg/Rjjce8SUGyorHp6R4fbtb6PmWtZCB5rmpbf0laMZtU3QjblKkkR++oFBq6KqWGk4Zl1oZY5V5xurj3qTVugKKKKDmdkwe/0lKOM6R/8ASiRfzNQaQ6NI0nXwSPbT8XjwNfueM9lx41HoDXJvHQjJvrrY25gHwBkbRsG/b4GmK6TjDBJD1TncrkDW+o25vI55gUFS30lpSLsvBFeKPaifqZMc2RuznuU1X050hgmTUu7e8tGQ6ySmEsEbBGsrprBhgkEEYIJFbC0i1V7ztqWg5ONFWs7Ao+irjPAmaxkbwSOTVz+7TvR3RuWLDQ6Lsdm5uueTzDOhPxrX3+hLeb5a3ik72jRj5EjNKX6A2gyYettmPGGWSPHeBkr8KCN7bS02wyW1quN6B55PLWAQVPH0KgNsLaZpJgHaQOxCujsdYmMqBqjWJONu8768fwevY8dRpKQgezPFHLnxcarV8/SdLRZ1oLW5HDq5HhY+IcFc+dBWS00pZ7ILtbiMbo7pSTjulXtZ8dlTSdNLvV1ZdGSg53xSRyKfwIHjXt+lrLsuLC7jB3sqLMg8WjJPwqKDpXYyHCXUanOCsuYmB5dsCgh/hHfucR6O1B86WdB71UE0s0NeXT3ct7NDHMlvm3KQlnaM7JHeJW9dhkKwGG5btuuh7QymGHNSGHvGyl/QVhCr2cvZuUeSWQH+cEjkiWM+0h2LzBGD3g40RpqC4BaCVXx6wGxlPJ0OGU+IqHSfRq1nOtLAhf54GpJ/1Fw3xr5pfo1bXDB5I8SDdKhMcg/+xSD5HIqiNAXkX8n0g7KPYuY1m/7g1X/Gg8P0NKgiC8uIwfYcpOnukUn41Wt+it3DrdTcWwLbz+iLGT3ko4yfKrgudLJ60FpNy6uWSInydWAPnXz+E1yg/XaMuBz6popvdhgaBbononfqRFcXURt+0W6pOrlJJ1iBhQq5JOW2nltORsba3WNFSNQqqMKo2ACkB6eWi467rrfP9LBKnvOqR8avWnSqylwEuoSTuHWKD7iQaBrRXyNwwypBHMHNfaAooooCiiigKKKKAr5IgYYYAjvAI+Nfa8TyAA593OgzGkuitoz9ZFH1Eg3SQMYWBO8gpj4g1Ja6Y0laH1hfw/NfCXCjZ6rjsybMntAE7KYUUDzo10vtr3KxOVlX14ZBqSpuzrIeAyNoyNu+n1cl6T6GcsL63cx3UC5QjGqwXJKOMbQQSN/Gt90K6Rx31pHcpgFhh1znUkHrr79o5gg8aDkmjelD21xdI8fWQm6uD2NkikyHOwnDDZu2Ed+6tXozS9pefqw8bg+tE4AbHEMjjPwrnd1/KLr+sz/3hr1Bbq7dtVYDb2lDDluIIoOp/wAGo0+Qkmtu6KQ6g8In1ox5KKP+H3a+peBv2sCOffE0f4Vz+G6lj+Rmkh7kkYr5RvrIB4KKuRdILsf/ACpD4pbn/wDiD8aDf2C3AJ694mGNnVo6HOzfrOwxjNXK52Oll4N00Z7ngB97LKv4UHp/eJ68VvJ9Uyxn3EuKDolFYi09JybBNbSxnnGVlX4arfdpwnTexMbuJ1BRWYo+Y5DqgsQqOASdnDNBb030kgtiqysS7HYkal3A4sUXaFGRt7692d3a3sZZOrnUHDBlBKn5ro4yp7iBXJ5onEP/ABFstOZOtk2ntRuRlPqhdXHLFar0cSSC7n65gzTQpJhfVHVuyaq8wA428c0Gim6FWJOssCxt86JnhP8A22WptGdGooZRN1k0jKrKnWytJ1atjWC524OBvzu2Y203ooM3d9I7h55YbSGJlhIWWWWQomuQD1aKoLEgHaccD5qn9IE8crRS2QJTGTHMNxAIKq6Lkbcb94PKo9KLJo+4nkaN5LSdzNropcxSMAHDgbdQ4GDw2DnUUsNjpABgySOo2MjFJEG3hsYDfsIxQP8AR3TaKRSxguUC+sepeVV8Wi18edNNHaetpzqwzxu3FQw1x4oe0PdWHtujFxAwe0v5YmHz1WTI5E7MjxBptJpvSmNW4gsbxfpKyMfEMCnuFBsao3uhLeX5W3ik+tGjfEisl0X01O+k3ikga2je31upMnWxh0YDXjO5QVOCo4763dBnpOgVhrayQmJuccksfwVgPhXkdEXT5HSF5H3NIsqjydT+NM9Laft7cqJ5ljLbgc7s41mwOyuSBrHAyd9MAaDNDR2lYx2LyCf9rB1flmJvyoOldKR46ywjmHEw3AXHeFkAJ8M1paWab6QRWzRJIGZ5SwjRACzaoy28gAbRx40C3+GoQ4uLO8h+kYusT7SE/hU1n070fJ6t1GpG8Sa0RB/fArw3Ty1Q/reuh75IZVH2gpGO/NSNpvRlwNVprWXPsyNESf3X20Di3vI5BmORHHNWVvwNSNKo4j31m5egujJiGSBAeDROyY8NRsfCon6DyR5/R9IXMXISFZ1HcFYDZ50Ggubrgp8aqsxO/bSRrTS0PC2ulHItDIfI5Som6TyR7LmxuYebKnWxj99P8qB/RSW06YWUm65jXuc9UR5PivGkOl8C4WBv0mZvUjhIkJP0mGQq8yfdQHTXShigMcW2ac9XEo3lm2FvBQc554r56LIhY39zY6xMbwQzLtONZMRuw+szE+Q5V50FoWUzG8vCrTldVEXakKH2V5sc7W7zS/Sc/V6W1s4zZ4/7tBlXfM90edxMfe5NXLEb/KldjJlpzzmkPvOaa2O4+NBYooooiK7uBGhc7ccOZOwDzJAqgusTljkngNw8ONSacbZEvzpBn90FvxAohHaHjRVqCADad/4VFpfJj1OEjIjHZsQsCx7tg31bqrpW1MsToDgkHHDbwHgdx7jRE0mnwqgyQMbaQEa47RCYwCyY2KwPPOPdVXRV+9u6tA/WPAGeE5OrPbt8pE2N7ADGN4KjApn0d0pHKiDI1guHQ4ypHZbK8s/jSDpNZraTK8R1VbWkjA3RyJjWA+iy4BHhyFFdC0f0+10VzGpDAEY1kAzzPaOfKrI9IMAOJIJ1HzlVZF+62v8AdrnvRw5iJAwpdyg5ITkfnTGg39p02sJNguY0PKTMR90gFR6R6I2F3+sMUZbf1kTajZ5lkO0+OawboCMEAjkRmllzFbRMDsifh1ZZH28gm34UG+foJPH/ACbSMy/RmCzDwycYHhUP/C9LIcfxKVeeZEY+OzA+NZmyvNJL/J3vyOHWRiRfLrcHHnTa26V6Zj+VsRKvMLqP912HwoNF0X6PTJO93dMhmZOrRI8lIo86xGTtLE4yf89mlrCx+lFUA/SrK5g5nV1lHmwU/Cnuhum1jcsEhnXXOwI4KMTyAYDJ8M0CieETNppX2nURBneqrCXXHIa5ZvGnXQSYvo+1Ztp6pB9kao+ApbpjotctcXMltNHFHdoiTa6M7rqKUzGAcbVJG2tJoyxSGGOGPOpGiqud+FGMnvoLFYHpWxk0zapwigeTzcuv5L7q31c/0h2tNynglqg97KfzNBZ05NjqUzjXkA+yC5+CGkukreKSVkeJG1VQjKKT2tfO3GfZFW+kU38as05tK32Y2H+Ol2k7xI7phIwTXij1S2wEq0gYZ3ZGV2d9Am6SaKijiMkcYVhxXKnHHGDyzRazzLhoru4QbxqysVI4dk7CKe3MAkTVO48d4rPv0adSRG7qp4Kwx5Z2igd6N9I1zbMq3LrcREjJwEmUcxjYwA5jbzFdXikDAMpyCAQeYO0GuIQ9HAFfI3q2WY6zHZzrqXo8ues0daseEQX/AKeYx8FoLOm9GQykdbDHJ9eNH/EUp6LvE8AkigSDJdWRFVcMjMh9UDO1c+daDSPs+f5Vm+iJ/VSjlc3I/wC65/Ogc1zP0sXZiu4m4mDH3yfyrplcr9NH8pg/Y/42oFmiN837V/jindj6p8f8qT2KastwvKU03sdx8aCxRRRRC3TfrQ/XP9hq9W/rDxqPTnrwfXP9k1Jb+sPGimFFFFELr/QkcjdYC0cnzkOD4nv768SaCV2DTSPMQMAMdmN/CmlFB8VQAABgDcOVfTRSrSekIy/VPrMgI11j9eQn1Yk5Z9o8BzJAIOtAaGkvTrBjFbAka6+vKRsIjJ9VQfa93HGrgj0fYDAMMB4lmHWN4sTrmsha3l7cxNI4W1tY+wiZeJMA6oRVjAlkbcuAygnYOIpbPKLeIsLmFJ5GCpHAsOYxty88oDvkfNDE54neCugfw1tODyN3rDMQfA6m2gdNbPOGmMf7SKWMe9kArIXMiGBVimvZ52KhpyLvUUHazqgIzgbFXvGdmamS7iWTbdX1tCiAZkWZusc7SxEisiKNgxjJJO4AZDc2WmrebZFPFJ3LIrHzGc1V0t0TtJ89bboSfaUajfaXB99ZGOBp0jbUs70yMQsZRFmWMbS0k0XZQqCNbZgEgAkkZ9C4Nu5RZLiydApKSk3lrgkhe2MtGDg7TjYBQaE6PvrbtWtwbmMb4bggsRySbYQeADbKZ6B6Xwzv1DhoLgb4ZRqt+4dzjYdo4bcUmsOmWqF/S0VFbYtxE3WW7nZ7Y2oc8G5b6baa0Lb3kYEgDcY5EI10O8NG48jyOKDQ1grkf+s3P7CL8qs2XSCexdYNIHrIGOrHdgbs7knHA/S/HaRb0/oKO8dLqzukjuFTVV0KSRumc6rgZyM52jnuOzAIelDiKe2uHB6pBKrOASEL6mqWxtAOGGalzDcJj9XMn7rj/epJptJQbJ7ITKBte3fWz4Rt2qR313o1jrXFrJbtzaF4mzzzHQWJOiNvt6vrISf6ORl+ByKjPRqUepeSj6yo/wDlUcK2R2w6Tki+i0oKj92QfnVyGwusZhvYZhw14x/ajNBTfQN0Af44GGDsMKfiDmth6Jnzou3/APtHukes3dTX0SEywQuMHLRy6nDfiQfnWp9F9uU0ZbgjGVZvJ3Zh8CDQOtI+z5/lWZ6JLgXS8rub72q3+KtNpH2fP8qTaKsmja4JxiSUyLjkY41Oe/WVqC9XOPSVZddexIOFvn75H510esbpZNbS+Dwsx/e0GVuU1b69T5szfiwq/Y7j4146YQ9Xpe8T5xL+8g/g1erHj5UFmiiiiFenfWg/af4TUlv6w8aj07vh/af4WqW29YUVfoooogoorzLIFBZjgAEk9w2mgqaU0h1YCIC0r7EUAk55kDaQOQ2mvVpozqFKA9VK6nXbV667dT6xSMHVgQ5I1nbO3JI3VSj05JCCIFzdTYZ32HqYv5uNCdgYr2i3DWHHdXFsSp65+yTrFASqFt+s5zl2z7TEmimc0lsNXrZIuzsBnmlvHHICGHES8saxAq/ZaZskGDfSRD/k2iQL5ERM3xpHauh2RLn6i7PtYx8a9MJ89mDZzZ1XPgBmg1ttf6Nk2/8AE7jb8+6mT4Nq4ptb6NdhrWmkZGHKRo7pCORJw/3q5tKJMfrLYkfRKSfDfVZVtyw2dW43etGw8NwoN/pDRDqde4sEkI2maydo5R3mPKsT4M26oLGN5FkitLpbhCcy29yDHMdwZXkwHIIAU6y4wMZxSCx0tewY6q6ZlHsSjrAe7WPaA8KanpRbXOqmkITbyjZHcRE4VuBWQdpPA5GzbQU3jBllEsZsrmTsQwRqkcUg5yytmKRduDkDjgEkChby60ZKVwhUBTJGrMYNZ8nVyR+pkPD2WyDgDZWjv7gxx9XpBVurR/VuVXOqD6plVd3dIndzqjpa0ntrd1hlM9hIAWcKs0sMbY1mXbiRNXZrH1RjltDQ2ulre+t3AGspGrJE4wyE8GXh3EcthrnOk9BJazCORA8Mh/VSHYyt8x2GDkcD/wCceNLKlrOk+jJjKioGZRrOUTZkSED1DybBXu3jY2lxb6StSCOywwy+1G427DzG8HiPMUCa2kli+SuJ4+4Suw+y5ZfhV+PpJfKMC4D90scbeXYCGkNjI8UjWs3ykW5v6RPZYeWP96v0Rdl6QO/8osLK478dWfvK+3zqCSfRT/L6Kki74jrAf9OQH4VDRRTXR0HR9nBLDWG5bh5lA8pCFPxrfWN3C6gQyRsoAA6tlYADcBqndXK3UHYQCO/bVObQ0Db4k8hq/EYoOv6RXYD4/wCvhVKuWTQNGo6ueePbuWWTHuJNVphI+yWeeQcmlbHuGKDoumulVtb9mSUF+EadtyeWqN3nisZaaQe90iz4a2xb4AUoWKiQY1tZSBnW3AbMDbvpZb2qIMIoXw3+Z31b6LbL9v6uf7xaBp6XLfq9M639LCp9wK/4KXWO8+Vab0922rd2E3zlkQn6pUj+8NZeyPaPhQXKKKKIV9If5j9qvxDVNa+sP9cKg6SerD+2j/xVPaet76KvUUUUQUn6VXOrGsY2mRgMA4JAwTt7zgeZpxSFiJZ3kPqx9hPEeufeaCKGFYFCqC8jnHezcfBRzpna6JGx5v1j9/qKeSr+Z21FoOLXLTt7WQncg4+JO2mtFAFFR3FwqLrOwUczVZbuR/ko9VfnyZHuQdo+eKIu14ngVxh1DDkQD+NJ7jSjq2qJVkYb1SJmx3Eh68r0iZSBJH/aQ/ZfZ96gs3OimTtW5xzRiSh+qTtU+ePCqsN2rkxyLqPxR+PhzFNrTSEcmxTht+qw1Wxzwd47xsr5pCwSVcONo3MNjKeYNFQaF0rNZE9V+ttznXgbtYB3mPPHu48c8HNreiGP9JsmMlmxJlgG+LO1mjHs43lDs4jZtGWEjwOI5jlT6km7Pc3I1Zt9IPaS9fGMxtsmjG5h88D5w5/5mga6RiNqP0izkC2txqiUhdfqtY461BywSMHceG4Ci7Jou8QxSa9vIqiRc5ZRwY48dYHiCwptbvHAw1cNo+92D5sUj7CuPZRtoxwI4YpbHoqVuu0WRGiR5kaUga7xjBi5bQdhbgBjxBt6QNG68S3cW14dpx7cZ9YZ5DOfDNK7C6DqNu8Ag8x/nTD0caUE9u1vLtMY1d+daNsgbeONq+GKzejo2iMkDHtRSMueYzsPntoH1FeIZNYZr3RBRRRQUdOSasYYcHT3FgD8Kio6UHFux5Mh+8KKKK9dHj/Hm/YH+2tea9dHh/Hm/YH+2tB0P/8AICL+L2knFbpR9pWJ/sVz62OGFdY9NdiZNFTMoy0TRyD91gGPkrMfKuRRvkBhxwR+NA0orzE+sM16ohZ0jHYjPKaM/iPzqaz9byNR9I/kc8njP3gPzr3antDzoq9RRRRHx2wCeQrL2rkWjNxIck95JGa08q5UjmCKysO2yPcp+DE0VprGLVjRRwVR7gKldgASdgAyfAV5t2yqnmoPwqp0gl1beU/Rx9ohfzoipowGaTrnGRt1FPsLuGB847yalllM8jRIxWJNkjDex+YDwHM1LoZQBqjgF9wqn0ZkxE+drAuT3kE5/KimE1zFAoBIQblUDafBRtPjVd9LwP2JQVzwkQgH37Kg0TGC0cznXkkGSx4ZyAqjgBTa4gVxquoYHgRmiEGlNBuFDW7EqDrBM7R3o2/ju/GvegekBbEcx25wr7sn5rcj3/6Mlvm1mWPJMMmdTO3Vblnlk/Ed9RdK9GqB1yjG0BxzB2BvEGinl3arIhRxkH/WR30ktS0bmCQ5I2o3z0/zH+t1Xejt2zIY39eI6p7x7J+HwqTTlgZEyvyidpD3jevn/lRFfRMqxl7OY/xa52Id/VSHcRyGce4d9XGnJMEk47cUhtLobRro3qMx36mzJ57eFKSFuIOWR9lh/wCfhXuzuuvEsTfKSwMrjiZrbto3migeOaKYWl11OlVkEZjhuSyKDs1hnUDgYGAzqrAcm76Ok0XV6Rk5SxI/mOx/hNUek91rRWt4TrTOVYY3JHEEUqTz63WOebEcKc9P/l7SQbnWQZ7sBh/aoKtm+DjnV2loNMgaAoooohb0oXNvJ+78GFfKk6QD+Ly/V/MVEh2Dwor7Vnokmb9v6uf7xarVb6Hf+4N/Vj/eJQd/vrRJY3ikGskisrA8VYYI9xrh/SHoFe2JOpE11bg9h4+1Ii8A8Y2kjmuzAzs3DvFFB+abPSaE9lxnip2H3HbmmkUobd7q7VpvotZ3X8ot45D84qA/k4ww8jWQ0n6Grc5NrcTW54KT1sY/dbtfeoOfaUtetieMbyNniNo+IFL7e7IYK6lJPmsNhP0W3HyrV6Y9HOl4dsLQ3KjliNz4q2B7mNZu7kuoNl1EYCDjMsMioT9GRdYHxoGCPkZr1Va0nkk9QRSfs5Qx+yyr8ashX9qJ18QG+KFhRH2szbw7J4eTOB4PtWtOFOcceWRn7O+kelIzFcqxGBINVtmMOu7PiMCirugp9eCM8QuqfFez+VGnIdeCVRv1Sfs9r8qqaEfUllhO5j1ieexh5GnBFEKdEXOQjcGUf699QH9TcMvsyHXTln21qC2j6qV4Du9ZO9TvHl/nTWaBZ49R9hG0EbwRuYUUqtn6tzCdg2mM81Jzq+IJNOI77Z2ht7uNJ7pCg1LlcrnsyLnGeByPVb4URxSjHVypIh3a+c4+su+g+9JJNaMtuIK6vcc8O/fV7pMT+jMD6zagx36wOPgarw2mWV52VtU5VEBxngWJ31LETcTK381Ecjk0nDHMDnQEK9VeavCSMfaT/wAD404pRpI5urYDeOsz4Y/3pvRCm7g6qfAGFmjEg5B1JjceJK637wqjo89VpOBvnOn38ofx+NNtOqf4s3KSZftJGR/ZPvpRfbLm1b/mL8HU/nRTG5tZTZ3FugCx28s2sxwSUQq8cY47SzNn6PfV7pY2YNGtxIX4xpmq/Sa5eI6UVBsZrYE7MKJEOsfPYuznVnpnHqDR8PFVb7iIKCjTCA9keFL6YxLgAd1B6ooooilp0fxeX6hqtAeyvgPwq3poZgl+oapWZ/Vp9VfwFFS1c6HD/wBQb+rt/eJVOm/o7jzpJh/+q394lB3uiiigKKKKArw6gjBGQa90UGZ0x6PdHXGTLaRhjt1kBibPMshGfOs/eeicrk2l/NHyWULOngM4IHvro1FByi56P6XgUhoLe8Qburfq2x3rIMZ8M1nelNyrwNFdWtxasuCkjxEojrtGq6g9ngcDca7zXyg/LcNwZUSWP5WM7Rz+cvgwrQWV0sqB13H3g8Qe8Vr/AEp9AGDnSFimWx+vhUY1wP5xAPbHEcd+/Oea20+qeuh7SN8pGN55so4OOXGgaaX0d1ybDqyLtRuR5HuNLbK8JOqw1JF9ZfzHMU5tLpJFDocj4g8iOBqLSOjUlwTlXHquuxh/mO6iPUN2GGGwPwNV5dBxZzGWiJ+YcA/unZVFxNFslQuo9tBn7S7x+FS218D6kgPcD+VBOuhQflJHcfN7Kg+OqM486uvIsahQAMDYo2Y/8VQkuyBlnwOecfGqql5uzFkKfWkO4Djq/Oagl0OplmknO5RqKeZ3sR+HnTqorS2WNFRBhVH+5PfXy9uliRnbcBu4k8AO8mgr6anDNbwjehllfu1wsaDPPsMcciKUSnrLy3iAzqyJnu1mUn4Lmpo2MaPNJ67dpu75qDw3Ve6FWY61rqY4SEM8jHd1jjAT9xOG8M2KKi0gjXGlZIFb9W8qGQcCIV4/eHifCmPTGbXvlUbootvc0hJx9nFVdC3i2okupV17q5LNHEDtVGOtlz7Kk4PgB34htYXZmeQ60kjaztwzwA7gNgoLFpHk54D8au18jQAYFfaIKKKKCtpT5F/qml2jT+qj+ov4CmWkT2COefwpXoo/qY/qiirNaD0U/wDukn9Ub+9jrP1qPQmqy6RnkXaEt9QnhlpFbZ9n4Gg7VRRRQFFFFAUUUUBRRRQFFFFAVzjp96MhKzXVgFjnOS8fqxzcT3LIee4nfjJNdHooPzE9uRIwGvBOhxIhGCDydDvHfVqLS7LsnQj6aZZPEj1lrt3TLoTb36gyAxzL6kyYDr3H5y/RPM4xvrlen+hd9Z5LxdfEP52EFiBzeL1l7yMjvoKtvcI4yjBhzBBrxPYRP68aMeZUZ99KUEMh1lI1uakqw8cYPkakQzL6s2sOTqD8RigvR6JgByIlz3jOPDNW6VC7uOUfjlvw1fzr40s53yKo+im33sT+FAzmmVAWYgAcTSZpTcOHIIiQ5jB3sfnkcuVeZoo1IaVi7cNcliT9FBsz4Cn+jOgWkr0DVi/RoW3vL2XI46sfre8DPOgxumL8PIIwwVFPabeMjuG/HLiadW9hdXUSRwRGK1TauvjMrb+scH12J249UbtvHpujvQraRRpiWXr129aNQbe6NlZQvdtO3fXm96GaVi+QuILheUqNE/vUlc+6g51DozqyS5bWY9p2DFmPexq7EVAwCPfTzSFteoSbnRRccXiZJD+TUinurDdItxasT7avv/fDCgloqJNHxP8Aye8if6LDDebK3+Go59HXKfzYcf8ALlB+D6poLNfGYDaaVPdSr68Uy+KMR71yKhOlIs4L4PJgVPxFBZ0hddlmO5Qf9edQaPiKxIp3hRmvh0hF/SJ9oVHJpEEHqx1hAySNiqObsdgFB50zeai6qntNn91fab3V170F9G/0ax69xiS5IfbvEYyIx5glv36xPov9HT3ri9vQf0fOUQ5HXY3bOEY+PvruyrgYGyg9UUUUBRRRQFFFFAUUUUBRRRQFFFFAUUUUCbTfROzuttxbRu3ztXVfykXDD31l7v0Q2hOYprmL6IdZFH21LfGvtFBSPocPC+bHfChPvDAfCprf0PQ/z13O45II4x4Z1Wb3Giig1PR7ofZWZ1reBVfi7ZeTbv8A1jZbyBxT6iigKKKKAqCe2RxhkVh3qD+NFFAg0l6PNGzZ17SME7yg1D71xSKf0P2o/k1xc2+OCyay/ZYfnRRQLrr0a6Sjz1F9FMOCyxanvZc0rvdA6WjH62zhmHExyoo90m2iigV27szlE0fmUbxrQD72tWu6M+jeSZln0mFCKQY7VG1kB360zDY5+iNnkSKKKDpcaAAAAADYANgAHIV7oooP/9k=" width="200px"></a>
+			</div>
+		</div>
+		<div style="height:100em" class="teximg1">
+			<div>
+				<b><p style="text-align:center;color:#1D7AE8;front-size:23px;" class="texto">Presentación</p></b>
+				<p class="texto">El presente proyecto se enmarca en la participación de estudiantes y docentes en la edición 2023 del Concurso de Proyectos de trabajo con gvSIG Batoví, organizado por el  MTOP,  Plan Ceibal  y ANEP-DGES.</p>
+				<p class="texto">La selección del tema de estudio y la definición del problema emerge del trabajo realizado en el grupo de 9º5, en los cursos de Biología y Ciencias de la Computación, durante el primer semestre, y que se continúan durante este segundo. </p>
+				<p class="texto">La delimitación del área de estudio tiene como epicentro el liceo Nº2 de Salto, situado al oeste de la ciudad. En el año 2015 se detectó el primer caso de Leishmaniasis visceral en una persona y desde entonces la cantidad  ha ido en aumento. El flebótomo que la  transmite  encuentra en el contexto del liceo condiciones tanto naturales como sociales propicias para su proliferación, que serán estudiadas y georeferenciadas para poder realizar las conclusiones pertinentes. Además de analizar estas dimensiones ambientales que integran tan compleja dinámica se pretende estudiar las fortalezas y oportunidades que como comunidad se tiene para enfrentar la amenaza, entendiendo que la educación en distintos ámbitos, tanto formales como no formales, es una potente herramienta para mitigar los procesos que producen la enfermedad.</p>
+				<b><p style="text-align:center;color:#1D7AE8;front-size:23px;" class="texto">Fundamentación</p></b>
+				<p class="texto">Este proyecto persigue los siguientes propósitos:</p>
+				<b><p class="texto">- A nivel didáctico-pedagógico-metodológico:</p></b>
+				<p class="texto">-Atender los distintos estilos de aprendizaje e intereses  de los estudiantes, a partir de la utilización de metodologías activas y herramientas para el análisis de datos como un Sistema de Información Geográfico. </p>
+				<p class="texto">-Integrar métodos de investigación y los principios científicos  al estudio de la problemática.</p>
+				<p class="texto">-Diseñar y proponer distintas  medidas para mitigar su impacto.</p>
+				<p class="texto">-Generar,  a través de todo ello, el desarrollo de competencias tales como el pensamiento científico, la comunicación y la iniciativa para la acción.</p>
+				<b><p class="texto">-A nivel  disciplinar:</b> incorporar las distintas unidades curriculares al  estudio de la zoonosis, promoviendo la multi y la interdisciplinariedad, abordando estos procesos desde la multicausalidad que los configuran a distintas escalas geográficas (con énfasis en lo local).</p>
+				<b><p class="texto">-A nivel  actitudinal:</b> generar compromiso y una actitud proactiva de los estudiantes integrando a la comunidad en el proceso, incentivando además el trabajo en redes, donde la institución educativa evidencie su compromiso con el cambio, que es posible a través de la educación para la acción. En correspondencia con el Objetivo N° 3 para el Desarrollo Sostenible, planteado por ONU, “Garantizar una vida sana y promover el bienestar para todos en todas las edades.”</p>
+				<b><p style="text-align:center;color:#1D7AE8;front-size:23px;" class="texto">Tema</p></b>
+				<i><b><p class="texto">Estudio  de la leishmaniasis en el contexto del liceo N°2 de Salto: amenazas, debilidades,  fortalezas y  oportunidades en la actualidad.</p></b></i>
+				<p class="texto">El proyecto se desarrolla  teniendo como centro al liceo y su contexto inmediato. Se delimita el área de estudio en base a criterios de viabilidad de abordaje de la realidad estudiada (tiempo, recursos disponibles). La territorialidad de los problemas ambientales se  priorizan en función de las valoraciones de los estudiantes, y se cartografía inicialmente desde My Maps para realizar un acercamiento a los impactos generados en el entorno próximo al liceo.</p>
+				<div style="display:flex;justify-content:center;align-items:center">
+					<img src="img leishmaniasis GvSig\mapas\mapa mymaps.PNG">
+				</div>
+				<p class="texto">Mapa creado por los estudiantes en My Maps: se utilizan distintas capas para organizar variables a considerar en el estudio.<br>https://www.google.com/maps/d/u/1/edit?mid=1TpyNkE2bNs0vZk-7Ub8qcLXpcUHriog&usp=sharing</p>
+				<b><p style="text-align:center;color:#1D7AE8;front-size:23px;" class="texto">Objetivos</p></b>
+				<b><p class="texto">Objetivo general</p></b>
+				<p class="texto">Analizar las amenazas y dificultades ambientales que posibilitan la proliferación del vector de la leishmaniasis, así como las oportunidades y fortalezas comunitarias para enfrentarlas.</p>
+				<b><p class="texto">Objetivo general</p></b>
+				<p class="texto">1.Estudiar las condiciones ambientales  que promueven la presencia del  vector a escala local.</p>
+				<p class="texto">2.Conocer las distintas instituciones y sus acciones de promoción, prevención y/o  rehabilitación,  generadas a nivel comunitario  para mitigar la amenaza.</p>
+				<p class="texto">3.Cartografiar las debilidades, amenazas, fortalezas y oportunidades que emanan de la problemática estudiada.</p>
+				<p class="texto">4.Aportar distintas propuestas para mitigar la amenaza.</p>
+			</div>
+		</div>
+		<div style="height:85em;" class="teximg1">
+			<div>
+				<h2>Etapas del proyecto</h2>
+				<b><p style="color:#1D7AE8;font-size:23px;" class="texto">a. Selección de problemática a estudiar:</p></b>
+				<p class="texto">La misma surge como inquietud y propuesta de los estudiantes el grupo 9°5, en virtud a las situacionees particulares vividas por algunos de ellos, cuyos perros transitaron o transitan por la zoonosis conocida como la Leishmaniasis. Además de la constante presencia de perros en la institución educativa y el conocimiento de casos en humanos, en algún caso vecino.</p>
+				<p class="texto">Frente a ello, se participa en los clubes de ciencia con una propuesta vinculada a la temática. Se fabrica un repelente de origen natural.</p>
+				<b><p style="color:#1D7AE8;font-size:23px;" class="texto">b. Indagación sobre la temática:</p></b>
+				<p class="texto">- Búsqueda de información: sobre leishmaniasis: tipos, agente patógenos, vector, ciclo biológico, signos, síntomas, prevención, tratamientos.<br>- Condiciones necesarias para la existencia del flebótomo y la enfermedad.<br>- Análisis multiescalas: presencia de la enfermedad en Uruguay y en Salto.</p>
+				<b><p style="color:#1D7AE8;font-size:23px;">Testimonio</p></b>
+				<iframe width="700" height="400" src="https://www.youtube.com/embed/FDG7o6yY5nI" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<b><p style="color:#1D7AE8;font-size:23px;" class="texto">c. Formulación de hipótesis:</p></b>
+				<b><p class="texto">1- En el área de estudio se dan  condiciones físicas que posibilitan la proliferación del flebótomo como vector.</p></b>
+				<p class="texto">a- Los flebótomos tienden a proliferar en áreas con climas cálidos y húmedos. La humedad ambiental es esencial para la supervivencia de las larvas y pupas en el suelo, mientras que las temperaturas cálidas aceleran su desarrollo.<br>b- La vegetación densa proporciona refugio y sitios de reproducción adecuados para los flebótomos. Los lugares con abundante vegetación ofrecen sombra y humedad, lo que es esencial para su ciclo de vida.<br>c- El tipo de suelo puede influir en la proliferación de los flebótomos. Suelos con materia orgánica descompuesta, como hojas en descomposición, pueden proporcionar un ambiente propicio para las larvas y pupas.</p>
+				<b><p class="texto">2- Las  actuales condiciones sociales favorecen la presencia del flebótomo y la transmisión de la enfermedad.</p></b>
+				<p class="texto">a- La falta de saneamiento básico, de sistemas de eliminación de desechos, de viviendas adecuadas y la presencia de asentamientos, aumentan la probabilidad de que los flebótomos entren en contacto con humanos y animales domésticos, lo que  favorece la transmisión de la leishmaniasis.<br>b- La falta de conocimiento y concientización de la comunidad sobre leishmaniasis se debe a la falta de educación en salud, la escasez de campañas de concientización, debilitando  la capacidad de la población para prevenir y controlar la enfermedad.<br>c- La existencia de animales reservorio de leishmaniasis, como son los perros callejeros y aquellos que no son objeto de tenencia responsable aumenta la propagación de la enfermedad.</p>
+				<b><p class="texto">3- A nivel comunitario existen estrategias generadas por distintas instituciones para enfrentar el problema:</b> tales como centros de salud, veterinarias, escuelas y jardines. ¿Éstas se presentan como una oportunidad o fortaleza frente a la problemática?</p>
+			</div>
+			<div>
+				<img src="img leishmaniasis GvSig\img perro.jpeg" width="300px">
+				<img src="img leishmaniasis GvSig\img basura.jpeg" width="300px">
+			</div>
+		</div>
+		<div style="height:76em;" class="teximg1">
+			<div>
+				<b><p style="color:#1D7AE8;front-size:23px;" class="texto">d. Creación de instrumentos para realizar un diagnostico ambiental y trabajo de campo:</p></b>
+				<p class="texto"><b>-Cuestionarios</b> que se aplicaron en ámbitos como las escuelas, veterinarias y población en general.<br><b>-Fichas de observación:</b> que se aplicaron a través de la organización del recorrido en transectos.<br><b>-Medida de parámetros ambientales:</b> utilizando el Globilab (aparato que posee sensorres para temperatura y humedad).<br><b>-Construcción e instalación de una trampa de luz:</b> Se realizó por parte de estudiantes y docentes. Se colocó en vivienda particular. El criterio para su localización parte de identificar las condiciones que se están relevando y que se creen son más favorables en el sector donde se colocó.</p>
+				<b><p style="color:#1D7AE8;front-size:23px;" class="texto">Click aquí para mas información de la Trampa de Luz:</p></b><a href="pagina de leishmaniasis gvSig trampa.html" class="link2">Trampa de luz</a>
+				<b><p style="color:#1D7AE8;front-size=23px;" class="texto">e. Análisis y interpretación de datos:</p></b>
+				<p class="texto">De la sistematización de los resultados de las entrevistas, ficha de observación para el diagnóstico surge:</p>
+				<p class="texto">Las condiciones ambientales que permiten a la <i>Lutzomya Longipalpis</i> sobrevivir y reproducirse se presentan:</p>
+				<ul>
+					<li>Temperatura</li>
+					<li>Humedad</li>
+					<li>Cobertura vegetal</li>
+					<li>Condiciones de la ocupación humana del territorio</li>
+				</ul>
+				<b><p style="front-size:23px" class="texto">Las escuelas</p></b>
+				<p class="texto">En ninguna de las instituciones del área de estudio se abordó la temática, aunque se nota una gran disposición por parte de los distintos integrantes de la comunidad educativa por aprender sobre el tema e informarse sobre el mismo.</p>
+				<p class="texto">Gracias a esto se pudo dar charlas en las escuelas. De esta manera se tuvo la oportunidad de expandir el conocimiento y concientizar a la población sobre esta enfermedad.</p>
+				<b><p style="front-size:23px" class="texto">Las Veterinarias</p></b>
+				<p class="texto">Las veterinarias tratan a los perros o los mantienen en seguimiento. En la mayoría de los casos los perros en tratamiento o seguimiento son mayores en cantidad que los sacrificados.<br>Actualmente las veterinarias procuran tratarlos y mantener la enfermedad controlada tanto como sea posible con el fin de que el sacrificio sea la última opción.<br>Cada una de las veterinarias realiza un seguimiento de entre 50 a 150 perros enfermos por año.<br>La cantidad de perros sacrificados está en torno al 30%.</p>
+				<b><p style="front-size:23px" class="texto">Población del área de estudio</p></b>
+				<p class="texto">Un 75% de los entrevistados tiene conocimiento básico de la enfermedad, mencionando de qué trata e incluso enumerando algunos síntomas. Además describiendo medidas de prevención. <br>Un 25% no tiene ningún tipo de conocimiento sobre la enfermedad. <br>Un 50% de las personas entrevistadas tienen más de un perro, pero se observa que algunos de ellos estaban en la calle por lo que se concluye que no todos practican una tenencia responsable. <br>Las personas entrevistadas mostraron dispocición y entusiasmo ante la información y deseos de aprender sobre el tema.</p>
+				<b><p style="color:#1D7AE8;front-size=23px;" class="texto">f. Territorialización/Cartografía temática</p></b>
+				<p class="texto">Se georefenciaron las variables estudiadas: físicas y humanas vinculadas a la precencia de la problemática a través de gvSIG Batoví. <br>Para el análisis de estas dimensiones estudiadas y producción de la cartografía temática se utilizaron los siguientes procedimientos:</p>
+				<ul>
+					<li>Buscar datos espaciales</li>
+					<li>Desplegar datos espaciales</li>
+					<li>Visualizar la información</li>
+					<li>Exportar información a formato shp</li>
+					<li>Cargar geoservicios</li>
+					<li>Crear información geográfica</li>
+					<li>Aplicar geoprocesos</li>
+					<li>Comparar información (geográfica) histórica</li>
+					<li>Editar tabla de atributos</li>
+					<li>Crear información geográfica en Google My Maps</li>
+					<li>Crear Mapas y compartirlos</li>
+				</ul>
+			</div>
+		</div>
+		<div style="height:57em;" class="teximg1">
+			<div>
+				<b><p style="color:#1D7AE8;front-size=23px;" class="texto">g. Conclusiones</p></b>
+				<b><p style="front-size:23px" class="texto"></p>En base al análisis de las fortalezas, oportunidades, debilidades,  amenazas y de los datos obtenidos se concluye:</b>
+				<p class="texto">1- Las Debilidades identificadas son:<br>-No existe a nivel comunitario suficiente información sobre la problemática y acciones de promoción que integren a la sociedad en su conjunto (campañas publicitarias, charlas, talleres).<br>-No existe trabajo en redes: ej. vincular la acción en territorio de veterinarias, centros educativos, organizaciones estatales.<br>-No se integra directamente la temática a la currícula en las escuelas, ni el en los liceos. Tampoco surge como tema de interés en función a las problemáticas que emergen en el contexto de los centros educativos.</p>
+				<p class="texto">2- Las Amenazas provienen de :<br>-Los perros callejeros, tanto aquellos cuyos dueños no practican la tenencia responsable como aquellos que no tienen un hogar. <br>-La ausencia o la poca presencia del Estado frente a la problemática (ejemplo en el caso de los perros callejeros). <br>-La carencia de servicios esenciales tales como el saneamiento, recolección de residuos. <br>-La ocupación humana de los territorios: la población habita zonas inundables, generando asentamientos. <br>-El cambio climático que ha provocado el aumento de las temperaturas.</p>
+				<p class="texto">3- Las Fortalezas emanan de: <br>-La presencia de organizaciones civiles gubernamentales y no gubernamentales coordinadas, como por ejemplo los NODOS BARRIALES. <br>La sociedad está organizada aunque no existe una integración de las líneas de acción, ello genera un abordaje fragmentado de la problemática y acciones que no inciden de forma estructural sino coyuntural.</p>
+				<p class="texto">4- Oportunidades para el cambio implican: <br>-Generar acciones de promoción y prevención: informando, educando a la comunidad. <br>-Integrar a la sociedad organizada en redes: NODOS BARRIALES, en el trabajo de promoción y prevención. <br>-Mejorar las condiciones en la ocupación humana del espacio. <br>-Mayor control por parte del estado de la situación: en el caso de los perros callejeros y la tenencia responsable de las mascotas.</p>
+				<b><p style="color:#1D7AE8;front-size=23px;" class="texto">Nuestros aportes:</p></b>
+				<b><p style="front-size:23px" class="texto">Salimos a la comunidad a informar y concientizar:</p></b>
+				<p class="texto">-Organizamos talleres en escuelas</p>
+				<p class="texto">-Creamos folletos informativos</p>
+				<p class="texto">-Fuimos a la radio Turística y hablamos sobre la problemática junto con alumnos de las escuelas quienes aprendieron sobre el tema a través de nosotros.</p>
+				<p class="texto">-Creamos una trampa, un mecanismo para atrapar el flebótomo.</p>
+				<p class="texto">-Fuimos a la Oficina Departamental de Salud y aprendimos a analizar muestras de mosquitos y a identificar entre ellas al flebótomo.</p>
+				<p class="texto">-Creamos mapas para analizar y mostrar la probleática en nuestro territorio. Hay información de muchas partes del mundo pero no de Uruguay</p>				
+				<p class="texto">-Creamos una página web la cual publicamos, usando "HTML" y "CSS" para difundir nuestras acciones y generar acciones de promoción.</p>
+			</div>
+		</div>
+		<div style="height:36em;" class="teximg1">
+			<div>
+				<h2 id="Mapas">Mapas</h2>
+				<p class="texto">Delimitación del Área de Estudio utilizando gvSig Batoví:</p>
+				<img src="img leishmaniasis GvSig\mapas\Área de estudio_page-0001.jpg" width="950px">
+			</div>
+		</div>
+		<div class="teximg1">
+		    <div>
+				<h2>Recorridos</h2>
+				<table border="1" align="center">
+				<tr>
+				<th></th>
+				<th>Parada 1</th>
+				<th>Parada 2</th>
+				<th>Parada 3</th>
+				<th>Parada 4</th>
+				<th>Parada 5</th>
+				</tr>
+				<td>Datos recaudados</td>
+				<td>20 perros.<br>2 gallineros.<br>Acumulación media de basura.<br>Vegetación media.<br>Población alta.<br>Agua estancada.<br></td>
+				<td>27 perros.<br>1 gallinero.<br>Acumulación media de basura.<br>Vegetación media.<br>Población alta.<br>Agua estancada.<br></td>
+				<td>13 perros.<br>1 gallinero.<br>Abundante basura.<br>Mucha vegetación.<br>Población alta.<br>Mucha agua estancada<br></td>
+				<td>11 perros.<br>1 gallinero.<br>Poca basura.<br>Vegetación media.<br>Población alta.<br>No presenta agua estancada.<br></td>
+				<td>1 perro.<br>No hay gallineros.<br>Poca basura.<br>Vegetación media.<br>Población alta.<br>No presenta agua estancada.<br></td>	
+			</table>
+			</div>
+		</div>
+		<div style="height:32em;" class="teximg1">
+			<div>
+				<b><p style="color:#1D7AE8;front-size=23px;" class="texto">Bibliografía, webgrafía, fuentes de datos geográficos</p></b>
+				<p class="texto">Asociación gvSIG. http://www.gvsig.org/web/guest</p>
+				<p class="texto">Barcia, L. (2013). Ciudadanía ambiental: ¿desafío, herramienta o compromiso ético para la educación ambiental?. REMEA - Revista Eletrônica Do Mestrado Em Educação Ambiental, 47–58. https://doi.org/10.14295/remea.v0i0.3441</p>
+				<p class="texto">Geoserver http://sig.inia.org.uy/geoserver/web/;jsessionid=dcdeec6c359a18347a554d3f8790?wicket:bookmarkablePage=:org.geoserver.web.demo.MapPreviewPage</p>
+				<p class="texto">Infraestructura de Datos Espaciales de Uruguay. Geoservicios. https://www.gub.uy/infraestructura-datos-espaciales/geoservicios</p>
+				<p class="texto">Ministerio de Desarrollo Social. https://mapas.mides.gub.uy/</p>
+				<p class="texto">Ministerio de Vivienda y Ordenamiento Territorial. Observatorio Territorial. Inventario Nacional de Ordenamiento Territorial. https://sit.mvotma.gub.uy/inot/</p>
+				<p class="texto">PLAN NACIONAL DE EDUCACIÓN AMBIENTAL (2014) en Cuadernos de Educación ambiental N° 4, Red Nacional de Educación Ambiental para el Desarrollo Humano Sustentable. Montevideo. ISBN: 978-9974-36-170-6. En línea: www.reduambiental.edu.uy</p>
+				<p class="texto">Programa Conjunto "Construyendo Capacidades para el desarrollo" 2007-2010 entre el Gobierno de la República Oriental del Uruguay y el Sistema de Naciones Unidas en Uruguay. Mapa de Cobertura del Suelo de Uruguay. Extraído de https://sit.mvotma.gub.uy/pdf/Cobertura2008.pdf</p>
+				<p class="texto">Sillero, N .et. al (2010). Los modelos de nicho ecológico en la herpetología ibérica: pasado, presente y futuro. Asociación de  Herpetología Española.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
